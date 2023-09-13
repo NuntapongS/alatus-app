@@ -5,7 +5,19 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(Object context) {
     return const Scaffold(
-      body: Center(child: Text('Second Page')),
-    );
+        backgroundColor: Colors.black,
+        body: SafeArea(
+          child: Center(
+              child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                'Page not found',
+                style:
+                    TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+              ),
+            ],
+          )),
+        ));
   }
 }
