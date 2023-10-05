@@ -4,14 +4,19 @@ import 'package:flutter/material.dart';
 class SecondPage extends StatelessWidget {
   const SecondPage({super.key});
   @override
-  Widget build(Object context) {
+  Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.black,
         body: SafeArea(
             child: Row(
           children: [
             OutlinedButton(
-              onPressed: null,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const HomePage()),
+                );
+              },
               style: OutlinedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
