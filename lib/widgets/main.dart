@@ -1,4 +1,4 @@
-import 'package:alatus_app/home_page.dart';
+import 'package:alatus_app/widgets/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

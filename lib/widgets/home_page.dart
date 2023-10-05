@@ -1,4 +1,4 @@
-import 'package:alatus_app/profile_page.dart';
+import 'package:alatus_app/widgets/profile_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
