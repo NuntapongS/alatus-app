@@ -1,5 +1,3 @@
-import 'package:alatus_app/screen/home_page.dart';
-import 'package:alatus_app/widgets/routes.dart';
 import 'package:flutter/material.dart';
 
 class SecondPage extends StatelessWidget {
