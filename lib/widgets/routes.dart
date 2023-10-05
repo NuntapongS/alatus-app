@@ -1,4 +1,5 @@
 import 'package:alatus_app/screen/home_page.dart';
+import 'package:alatus_app/screen/profile_page.dart';
 import 'package:flutter/material.dart';
 
 class Routes {
@@ -7,6 +8,7 @@ class Routes {
 
   static final pages = [
     _page(home, const HomePage()),
+    _page(profile, const Profile())
   ];
 
   static Page _page(String path, Widget child) {

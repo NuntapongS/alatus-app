@@ -29,10 +29,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 20),
             OutlinedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SecondPage()),
-                );
+                Navigator.pushNamed(context, '/profile');
               },
               style: OutlinedButton.styleFrom(
                 shape: RoundedRectangleBorder(
