@@ -1,4 +1,5 @@
 import 'package:alatus_app/screen/home_page.dart';
+import 'package:alatus_app/widgets/routes.dart';
 import 'package:flutter/material.dart';
 
 class SecondPage extends StatelessWidget {
@@ -12,10 +13,7 @@ class SecondPage extends StatelessWidget {
           children: [
             OutlinedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const HomePage()),
-                );
+                Navigator.pushNamed(context, '/home');
               },
               style: OutlinedButton.styleFrom(
                 shape: RoundedRectangleBorder(
