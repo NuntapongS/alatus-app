@@ -1,3 +1,4 @@
+import 'package:alatus_app/screen/profile_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -28,7 +29,8 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 20),
             OutlinedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/profile');
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const Profile()));
               },
               style: OutlinedButton.styleFrom(
                 shape: RoundedRectangleBorder(
